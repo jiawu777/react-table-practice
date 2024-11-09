@@ -1,0 +1,23 @@
+.header {
+  &__wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__area {
+    height: 100%;
+
+    &--tool {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+    }
+  }
+
+  &__menuList {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+}

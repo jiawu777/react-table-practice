@@ -1,5 +1,5 @@
 import "./App.css";
-import Home from "./pages/Home";
+import Sample from "./pages/Sample";
 
 const data = [
   { name: "Andy", age: 19, gender: "Male" },
@@ -9,7 +9,7 @@ const data = [
 
 function table() {
   return (
-    <Home />
+    <Sample />
     // <div className="App">
     //   <table>
     //     <tbody>
