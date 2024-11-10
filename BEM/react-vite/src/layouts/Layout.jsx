@@ -1,7 +1,6 @@
 import './Layout.scss';
 import Header from '../components/common/Header';
 
-
 const Layout = (props) => {
   const { children } = props;
   return (

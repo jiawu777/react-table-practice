@@ -1,6 +1,6 @@
 import AboutUs from "../components/Modules/AboutUs";
 
-const PageAboutUs = (prop) => {
+const PageAboutUs = () => {
   return (
     <>
       <AboutUs />
