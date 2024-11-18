@@ -1,5 +1,7 @@
 import './Layout.scss';
 import Header from '../components/common/Header';
+import Footer from '../components/common/Footer';
+import Main from '../components/Modules/Main';
 
 const Layout = (props) => {
   const { children } = props;
@@ -28,16 +30,18 @@ const LayoutNavBar = (props) => {
   return <section className="layout__navBar">{children}</section>;
 };
 
-const LayoutMain = (props) => {
-  const { children } = props;
-  return <main className="layout__main">{children}</main>;
+// const LayoutMain = (props) => {
+//   const { children } = props;
+//   return <main className="layout__main">{children}</main>;
+// };
+
+const LayoutMain = () => {
+  return <main className="layout__main"><Main /></main>;
 };
 
 const LayoutFooter = () => {
   return (
-    <footer className="layout__footer">
-      愛進化科技股份有限公司 統編：53995694. | Copyright © 2023 Evolutive Labs Co., Ltd
-    </footer>
+    <footer className="layout__footer"><Footer /></footer>
   );
 };
 

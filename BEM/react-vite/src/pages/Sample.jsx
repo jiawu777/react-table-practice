@@ -7,6 +7,7 @@ import {
   LayoutPageHeader,
 } from "../layouts/Layout";
 import PageHeader from "../components/common/PageHeader";
+import Main from "../components/Modules/Main";
 
 const PageSample = () => {
   return (
@@ -15,7 +16,9 @@ const PageSample = () => {
       <LayoutPageHeader>
         <PageHeader />
       </LayoutPageHeader>
-      <LayoutMain></LayoutMain>
+      <LayoutMain>
+        <Main />
+      </LayoutMain>
       <LayoutFooter />
     </Layout>
   );

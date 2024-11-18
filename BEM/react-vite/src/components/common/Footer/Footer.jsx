@@ -1,9 +1,8 @@
-// import Table from "../../common/Table";
-
+import { footerText } from '../../../constants/conFooter';
 const Footer = () => {
   return (
     <>
-      
+      {footerText}
     </>
   );
 };

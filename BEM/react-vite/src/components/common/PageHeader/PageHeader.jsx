@@ -1,4 +1,3 @@
-// import Table from "../../common/Table";
 import './PageHeader.scss';
 import bgHeader from '../../../assets/images/pageHeader/1.jpg';
 
