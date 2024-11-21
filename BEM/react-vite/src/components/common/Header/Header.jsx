@@ -10,6 +10,7 @@ const Header = () => {
       </li>
     )
   };
+
   const child = NavigationList.map(forMapNavigationItem);
   return (
     <section className="header">

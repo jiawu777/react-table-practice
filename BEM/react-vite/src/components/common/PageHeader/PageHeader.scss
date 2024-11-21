@@ -7,11 +7,16 @@
     background-size: cover;
     background-repeat: no-repeat;
     text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
-    font-size: 36px;
+    font-size: 56px;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: "Noto Sans TC", Sans-serif;
+
+
+    &__area--tool {
+      width: 70%
+    }
   }
 }
