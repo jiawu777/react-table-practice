@@ -7,7 +7,8 @@ import {
   LayoutPageHeader,
 } from "../layouts/Layout";
 import PageHeader from "../components/common/PageHeader";
-import Main from "../components/Modules/Main";
+// import Main from "../components/Modules/Main";
+import About from "../components/Modules/About";
 
 const PageSample = () => {
   return (
@@ -17,7 +18,7 @@ const PageSample = () => {
         <PageHeader />
       </LayoutPageHeader>
       <LayoutMain>
-        <Main />
+        <About />
       </LayoutMain>
       <LayoutFooter />
     </Layout>

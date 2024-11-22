@@ -1,7 +1,6 @@
 import './Layout.scss';
 import Header from '../components/common/Header';
 import Footer from '../components/common/Footer';
-import Main from '../components/Modules/Main';
 
 const Layout = (props) => {
   const { children } = props;
@@ -35,8 +34,9 @@ const LayoutNavBar = (props) => {
 //   return <main className="layout__main">{children}</main>;
 // };
 
-const LayoutMain = () => {
-  return <main className="layout__main"><Main /></main>;
+const LayoutMain = (props) => {
+  const { children } = props;
+  return <main className="layout__main">{children}</main>;
 };
 
 const LayoutFooter = () => {
