@@ -1,5 +1,7 @@
 import './About.scss';
-import { sectionList, intro } from "../../../constants/conMain";
+import { sectionList, intro } from "../../../constants/conAbout";
+
+
 
 const About = () => {
     const forMapItem = (item, index) => {
@@ -11,17 +13,22 @@ const About = () => {
         //     )
         // };
         // const txtChild = item.p.map(forMapTxt);
+
+
         return (
-            <li key={`item${index}`} className={`about__item ${index + 1 === sectionList.length ? 'about__item--end' : ''}`}>
-                <div className="about__desArea">
-                    <label className="about__desLabel">
-                        {item.title.join("\n")}
-                    </label>
-                    <p className="about__desTxt"></p>
+            <li key={`item${index}`} className={`about__item about__item${(index + 1) % 2 === 0 ? '--even' : '--odd'}
+            ${index + 1 === sectionList.length ? 'about__item--end' : ''}`}>
+                {/* <div className="about__desArea">
+                    <pre className="about__desLabel">
+                        {item.title}
+                    </pre>
+                    <p className="about__desTxt">
+                        {item.p}
+                    </p>
                 </div>
                 <div className="about__imgArea">
-                    <img className="about__img" src={item.img} />
-                </div>
+                    <img className="about__img" src={item.img} alt="Img" />
+                </div> */}
             </li>
         )
     };
