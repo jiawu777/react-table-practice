@@ -3,28 +3,30 @@
 
   &__wrapper {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
+    margin: 0px;
+    padding: 0px;
     width: 100%;
   }
 
   &__list {
     display: flex;
     list-style: none;
-    margin: 0;
-    padding: 0;
-    flex-flow: column;
+    flex-flow: column nowrap;
+    width: 100%;
 
   }
 
   &__item {
-    max-width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
+    flex-wrap: nowrap;
+    margin: 0px;
+    padding: 0px;
     gap: 0px 40px;
     justify-content: center;
     align-items: center;
+    background-color: red;
+
 
     &--odd {
       flex-direction: row-reverse;
@@ -40,8 +42,6 @@
   &__desArea {
     display: flex;
     flex-flow: column wrap;
-    margin: 0;
-    padding: 0;
     max-width: 445px;
     width: 100%;
   }
@@ -86,7 +86,7 @@
     font-weight: 500;
     color: #5F6858;
     padding: 80px 130px;
-
+    background-color: #FCFCFE;
   }
 }
 
@@ -97,10 +97,10 @@ pre {
   /* 超出寬度的單詞會換行 */
 }
 
-img {
-  max-width: 100%;
-  /* 確保圖片不會超過容器寬度 */
-  height: auto;
-  /* 讓高度根據寬度等比例縮放 */
-  object-fit: contain
-}
+// img {
+//   max-width: 100%;
+//    確保圖片不會超過容器寬度 
+//   height: auto;
+//   讓高度根據寬度等比例縮放 
+//   object-fit: cover;
+// }

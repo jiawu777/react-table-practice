@@ -18,17 +18,17 @@ const About = () => {
         return (
             <li key={`item${index}`} className={`about__item about__item${(index + 1) % 2 === 0 ? '--even' : '--odd'}
             ${index + 1 === sectionList.length ? 'about__item--end' : ''}`}>
-                {/* <div className="about__desArea">
-                    <pre className="about__desLabel">
+                <div className="about__desArea">
+                    {/* <pre className="about__desLabel">
                         {item.title}
                     </pre>
                     <p className="about__desTxt">
                         {item.p}
-                    </p>
+                    </p> */}
                 </div>
                 <div className="about__imgArea">
-                    <img className="about__img" src={item.img} alt="Img" />
-                </div> */}
+                    {/* <img className="about__img" src={item.img} alt="Img" /> */}
+                </div>
             </li>
         )
     };
