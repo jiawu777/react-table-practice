@@ -4,9 +4,11 @@
   &__wrapper {
     display: flex;
     flex-flow: column nowrap;
+    flex-grow: 1;
     margin: 0px;
     padding: 0px;
     width: 100%;
+    background-color: #fff;
   }
 
   &__list {
@@ -14,6 +16,7 @@
     list-style: none;
     flex-flow: column nowrap;
     width: 100%;
+    box-sizing: border-box;
 
   }
 
@@ -21,27 +24,31 @@
     display: flex;
     flex-wrap: nowrap;
     margin: 0px;
-    padding: 0px;
-    gap: 0px 40px;
+    padding: 40px;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    gap: 0px 40px;
+    color: #3c4238;
 
 
     &--odd {
-      flex-direction: row-reverse;
-    }
-
-    &--even {
       flex-direction: row;
     }
 
-    &--end {}
+    &--even {
+      flex-direction: row-reverse;
+    }
+
+    &--end {
+      background-color: #376242;
+      color: #FCFCFE;
+      background-image: cover;
+    }
   }
 
   &__desArea {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     max-width: 445px;
     width: 100%;
   }
@@ -51,11 +58,11 @@
     justify-content: start;
     align-items: center;
     width: 100%;
-    // font-size: 56px; //Q2:字太大會跑版
+    font-size: 56px;
+    font-weight: bold;
     flex-wrap: wrap;
     white-space: pre-wrap;
     word-wrap: break-word;
-    color: #3c4238;
     line-height: 1.2;
   }
 
@@ -67,14 +74,13 @@
   &__imgArea {
     max-width: 445px;
     width: 100%;
+    box-sizing: border-box; // 確保寬度計算正確
   }
 
   &__img {
     display: flex;
     max-width: 100%;
     align-items: center;
-    margin: 0px;
-    padding: 0px;
   }
 
   &__info {
@@ -90,17 +96,10 @@
   }
 }
 
-pre {
+p {
   white-space: pre-wrap;
   /* 長行會自動換行 */
   word-wrap: break-word;
   /* 超出寬度的單詞會換行 */
+  max-width: 100%;
 }
-
-// img {
-//   max-width: 100%;
-//    確保圖片不會超過容器寬度 
-//   height: auto;
-//   讓高度根據寬度等比例縮放 
-//   object-fit: cover;
-// }
